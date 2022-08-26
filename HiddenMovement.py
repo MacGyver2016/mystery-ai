@@ -1188,7 +1188,7 @@ def look_for_clues(CLUES, current_loc, JACK_LOCATIONS, INVESTIGATOR_LOCATIONS, I
                 if inp == 'no':
                     done = True
         elif current_loc == INVESTIGATOR_LOCATIONS[1]:
-            clue_loc = input("Arthur (blue), where would you like to look for clues? ")
+            clue_loc = int(input("Arthur (blue), where would you like to look for clues? "))
             while not clue_loc < 190 or not clue_loc > 0 or not is_adjacent(clue_loc, current_loc, INVESTIGATOR_DICT):
                 print("Arthur, you may not look for clues at that location. Please pick a valid location that is:")
                 print("An integer less than 190 and greater than 0,")
@@ -1206,7 +1206,7 @@ def look_for_clues(CLUES, current_loc, JACK_LOCATIONS, INVESTIGATOR_LOCATIONS, I
                 if inp == 'no':
                     done = True
         else:
-            clue_loc = input("Thomas (red), where would you like to look for clues? ")
+            clue_loc = int(input("Thomas (red), where would you like to look for clues? "))
             while not clue_loc < 190 or not clue_loc > 0 or not is_adjacent(clue_loc, current_loc, INVESTIGATOR_DICT):
                 print("Thomas, you may not look for clues at that location. Please pick a valid location that is:")
                 print("An integer less than 190 and greater than 0,")
