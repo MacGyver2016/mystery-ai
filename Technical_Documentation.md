@@ -32,7 +32,7 @@ Currently, users interact with the code through the terminal, which will prompt 
 ## Conclusion
 At this point, users can play a game of *Whitehall Mystery*, however they are very likely to win, as Jack currently moves randomly and is unlikely to reach the second Discovery Location in 15 turns or fewer.
 
-There were are few obstacles that have presented themselves during the project so far:
+There were a few obstacles that have presented themselves during the project so far:
 - Inputting information into the dictionaries proved to be time consuming and repetative. The difficulty was lessened by implementing some helper functions, but there is no way to circumvent inputting data for every circle and square present on the gameboard.
 - Connecting with Azure to attempt to implement a neural net also proved challenging, as well as doing so in a timely manner to attempt to complete the machine learning portion of the project sooner.
 - *Whitehall Mystery* is also a complex game with a lot of rules that must be adhered to. As it's easy for users to mistype information or for players to forget about a rule, safeguards had to be implemented to ensure the rules were followed.
