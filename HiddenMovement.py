@@ -1130,7 +1130,7 @@ def investigator_move(current_loc, INVESTIGATOR_LOCATIONS, INVESTIGATOR_DICT):
     # red moves
     else:
         print("Thomas (red), your turn to move.")
-        rew_loc = input("Thomas, you move to: ")
+        new_loc = input("Thomas, you move to: ")
         while not investigator_can_move(current_loc, new_loc, INVESTIGATOR_LOCATIONS, INVESTIGATOR_DICT):
             print(f"Thomas cannot move to {new_loc} from {current_loc}.")
             new_loc = input("Thomas, please input a valid location to move to: ")
